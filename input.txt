@@ -1,0 +1,63 @@
+# Número de estaciones, número de túneles
+15 38
+# Estación | Tiempo de Transbordo
+1 2
+2 3
+3 2
+4 2
+5 4
+6 2
+7 3
+8 2
+9 1
+10 2
+11 1
+12 2
+13 1
+14 2
+15 1
+# Túneles: Estación_Origen | Estación_Destino | Tiempo_Viaje | Línea
+1 2 4 L1
+2 1 4 L1
+2 3 3 L1
+3 2 3 L1
+3 4 5 L1
+4 3 5 L1
+4 7 4 L1
+7 4 4 L1
+9 2 3 L4
+2 9 3 L4
+2 5 5 L4
+5 2 5 L4
+5 10 2 L4
+10 5 2 L4
+10 8 2 L4
+8 10 2 L4
+12 14 5 L9
+14 12 5 L9
+14 5 3 L9
+5 14 3 L9
+5 6 6 L9
+6 5 6 L9
+6 7 3 L9
+7 6 3 L9
+13 3 4 L7
+3 13 4 L7
+3 6 4 L7
+6 3 4 L7
+6 8 5 L7
+8 6 5 L7
+12 11 6 L14
+11 12 6 L14
+11 15 3 L14
+15 11 3 L14
+15 4 4 L14
+4 15 4 L14
+4 8 4 L14
+8 4 4 L14
+# Datos de la Misión: Origen_Pierre | Origen_Amélie | Destino_Búnker_P | Destino_Búnker_A
+1 12 7 8
+# Líneas Clausuradas para Transbordo: CLAUSURA | Línea | Minuto_Inicio | Minuto_Fin
+CLAUSURA L7 5 12
+# Líneas con Retraso Técnico (Tiempo de Viaje x2): RETRASO | Línea
+RETRASO L4

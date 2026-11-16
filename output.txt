@@ -1,0 +1,23 @@
+=== PLAN DE ESCAPE CONFIGURADO ===
+Tiempo Total de la Operación: 20 minutos
+
+[PROGRAMACIÓN DE SALIDAS]
+* Pierre arranca en el minuto: 4 (Debe esperar 4 minutos en su estación de origen)
+* Amélie arranca en el minuto: 0
+
+[RUTA DE PIERRE (Tiempo total de viaje: 16 min)]
+Minuto 4: Estación 1 (Origen - Inicia Movimiento)
+Minuto 8: Estación 2 (Viaje L1)
+Minuto 11: Estación 3 (Viaje L1)
+Minuto 16: Estación 4 (Viaje L1)
+Minuto 20: Estación 7 (Destino Compuerta D1)
+
+[RUTA DE AMÉLIE (Tiempo total de viaje: 20 min)]
+Minuto 0: Estación 12 (Origen)
+Minuto 5: Estación 14 (Viaje L9)
+Minuto 8: Estación 5 (Viaje L9)
+Minuto 12: Estación 5 (Termina Transbordo a L4)
+Minuto 16: Estación 10 (Viaje L4)
+Minuto 20: Estación 8 (Destino Compuerta D2)
+
+Resultado de Sincronización: ÉXITO. Llegada simultánea en el minuto 20.
