@@ -1,5 +1,7 @@
 import os
 import heapq
+import re
+import math
 
 INFINITO = float("inf")
 
@@ -215,6 +217,11 @@ def main():
     grafo, mision, clausuras = leer_entrada(os.path.join(carpeta, "input.txt"))
     plan = planificar(grafo, mision, clausuras)
     escribir_salida(os.path.join(carpeta, "output.txt"), grafo, plan)
+    ruta_salida = os.path.join(carpeta, "output.txt")
+    escribir_salida(ruta_salida, grafo, plan)
+
+    with open(ruta_salida, encoding="utf-8") as archivo:
+        print(archivo.read())
 
 
 if __name__ == "__main__":
