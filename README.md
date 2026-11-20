@@ -12,3 +12,5 @@ si cambias la entrada, ejecuta primero `python3 escape_metro.py` para
 regenerarlo. La ventana incluye un botón para reiniciar la animación y un
 panel que muestra el nodo actual, sus vecinos y el vecino elegido para cada
 viajero, además de un resumen del criterio usado para seleccionar las rutas.
+
+Estos dos pasos pueden ser hechos facilmente si solo ejecutas main.py
