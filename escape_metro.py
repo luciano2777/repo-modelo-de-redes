@@ -1,5 +1,6 @@
 import os
 import heapq
+import json
 import re
 import math
 
@@ -212,13 +213,72 @@ def escribir_salida(ruta_archivo, grafo, plan):
         archivo.write("\n".join(lineas) + "\n")
 
 
+def escribir_json(ruta_archivo, grafo, mision, plan):
+    grafo_json = {
+        "estaciones": [
+            {"id": ident, "tiempo_transbordo": grafo.transbordo[i]}
+            for i, ident in enumerate(grafo.ids)
+        ],
+        "tuneles": [
+            {
+                "origen": grafo.ids[u],
+                "destino": grafo.ids[grafo.destino[k]],
+                "linea": grafo.linea[k],
+                "tiempo_viaje": grafo.tiempo[k],
+            }
+            for u in range(grafo.n)
+            for k in grafo.arcos_salientes(u)
+        ],
+    }
+
+    plan_json = None
+    if plan is not None:
+        total, ruta_p, ruta_a, itin_p, itin_a = plan
+        rutas = []
+        for nombre, compuerta, ruta, itinerario in (
+            ("Pierre", "D1", ruta_p, itin_p),
+            ("Amélie", "D2", ruta_a, itin_a),
+        ):
+            rutas.append({
+                "personaje": nombre,
+                "compuerta": compuerta,
+                "estaciones": [grafo.ids[i] for i in ruta.estaciones],
+                "tuneles": [
+                    {
+                        "origen": grafo.ids[ruta.estaciones[i]],
+                        "destino": grafo.ids[ruta.estaciones[i + 1]],
+                        "linea": grafo.linea[k],
+                        "tiempo_viaje": grafo.tiempo[k],
+                    }
+                    for i, k in enumerate(ruta.arcos)
+                ],
+                "tiempo_viaje": ruta.costo,
+                "minuto_salida": itinerario.salida,
+                "minuto_llegada": itinerario.salida + ruta.costo,
+            })
+        plan_json = {"tiempo_total": total, "rutas": rutas}
+
+    with open(ruta_archivo, "w", encoding="utf-8") as archivo:
+        json.dump({
+            "grafo": grafo_json,
+            "mision": {
+                "origen_pierre": mision[0],
+                "origen_amelie": mision[1],
+                "destino_pierre": mision[2],
+                "destino_amelie": mision[3],
+            },
+            "plan": plan_json,
+        }, archivo, ensure_ascii=False, indent=2)
+        archivo.write("\n")
+
+
 def main():
     carpeta = os.path.dirname(os.path.abspath(__file__))
     grafo, mision, clausuras = leer_entrada(os.path.join(carpeta, "input.txt"))
     plan = planificar(grafo, mision, clausuras)
-    escribir_salida(os.path.join(carpeta, "output.txt"), grafo, plan)
     ruta_salida = os.path.join(carpeta, "output.txt")
     escribir_salida(ruta_salida, grafo, plan)
+    escribir_json(os.path.join(carpeta, "output.json"), grafo, mision, plan)
 
     with open(ruta_salida, encoding="utf-8") as archivo:
         print(archivo.read())

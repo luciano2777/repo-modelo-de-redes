@@ -1,0 +1,387 @@
+{
+  "grafo": {
+    "estaciones": [
+      {
+        "id": 1,
+        "tiempo_transbordo": 2
+      },
+      {
+        "id": 2,
+        "tiempo_transbordo": 3
+      },
+      {
+        "id": 3,
+        "tiempo_transbordo": 2
+      },
+      {
+        "id": 4,
+        "tiempo_transbordo": 2
+      },
+      {
+        "id": 5,
+        "tiempo_transbordo": 4
+      },
+      {
+        "id": 6,
+        "tiempo_transbordo": 2
+      },
+      {
+        "id": 7,
+        "tiempo_transbordo": 3
+      },
+      {
+        "id": 8,
+        "tiempo_transbordo": 2
+      },
+      {
+        "id": 9,
+        "tiempo_transbordo": 1
+      },
+      {
+        "id": 10,
+        "tiempo_transbordo": 2
+      },
+      {
+        "id": 11,
+        "tiempo_transbordo": 1
+      },
+      {
+        "id": 12,
+        "tiempo_transbordo": 2
+      },
+      {
+        "id": 13,
+        "tiempo_transbordo": 1
+      },
+      {
+        "id": 14,
+        "tiempo_transbordo": 2
+      },
+      {
+        "id": 15,
+        "tiempo_transbordo": 1
+      }
+    ],
+    "tuneles": [
+      {
+        "origen": 1,
+        "destino": 2,
+        "linea": "L1",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 2,
+        "destino": 1,
+        "linea": "L1",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 2,
+        "destino": 3,
+        "linea": "L1",
+        "tiempo_viaje": 3
+      },
+      {
+        "origen": 2,
+        "destino": 9,
+        "linea": "L4",
+        "tiempo_viaje": 6
+      },
+      {
+        "origen": 2,
+        "destino": 5,
+        "linea": "L4",
+        "tiempo_viaje": 10
+      },
+      {
+        "origen": 3,
+        "destino": 2,
+        "linea": "L1",
+        "tiempo_viaje": 3
+      },
+      {
+        "origen": 3,
+        "destino": 4,
+        "linea": "L1",
+        "tiempo_viaje": 5
+      },
+      {
+        "origen": 3,
+        "destino": 13,
+        "linea": "L7",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 3,
+        "destino": 6,
+        "linea": "L7",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 4,
+        "destino": 3,
+        "linea": "L1",
+        "tiempo_viaje": 5
+      },
+      {
+        "origen": 4,
+        "destino": 7,
+        "linea": "L1",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 4,
+        "destino": 15,
+        "linea": "L14",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 4,
+        "destino": 8,
+        "linea": "L14",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 5,
+        "destino": 2,
+        "linea": "L4",
+        "tiempo_viaje": 10
+      },
+      {
+        "origen": 5,
+        "destino": 10,
+        "linea": "L4",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 5,
+        "destino": 14,
+        "linea": "L9",
+        "tiempo_viaje": 3
+      },
+      {
+        "origen": 5,
+        "destino": 6,
+        "linea": "L9",
+        "tiempo_viaje": 6
+      },
+      {
+        "origen": 6,
+        "destino": 5,
+        "linea": "L9",
+        "tiempo_viaje": 6
+      },
+      {
+        "origen": 6,
+        "destino": 7,
+        "linea": "L9",
+        "tiempo_viaje": 3
+      },
+      {
+        "origen": 6,
+        "destino": 3,
+        "linea": "L7",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 6,
+        "destino": 8,
+        "linea": "L7",
+        "tiempo_viaje": 5
+      },
+      {
+        "origen": 7,
+        "destino": 4,
+        "linea": "L1",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 7,
+        "destino": 6,
+        "linea": "L9",
+        "tiempo_viaje": 3
+      },
+      {
+        "origen": 8,
+        "destino": 10,
+        "linea": "L4",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 8,
+        "destino": 6,
+        "linea": "L7",
+        "tiempo_viaje": 5
+      },
+      {
+        "origen": 8,
+        "destino": 4,
+        "linea": "L14",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 9,
+        "destino": 2,
+        "linea": "L4",
+        "tiempo_viaje": 6
+      },
+      {
+        "origen": 10,
+        "destino": 5,
+        "linea": "L4",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 10,
+        "destino": 8,
+        "linea": "L4",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 11,
+        "destino": 12,
+        "linea": "L14",
+        "tiempo_viaje": 6
+      },
+      {
+        "origen": 11,
+        "destino": 15,
+        "linea": "L14",
+        "tiempo_viaje": 3
+      },
+      {
+        "origen": 12,
+        "destino": 14,
+        "linea": "L9",
+        "tiempo_viaje": 5
+      },
+      {
+        "origen": 12,
+        "destino": 11,
+        "linea": "L14",
+        "tiempo_viaje": 6
+      },
+      {
+        "origen": 13,
+        "destino": 3,
+        "linea": "L7",
+        "tiempo_viaje": 4
+      },
+      {
+        "origen": 14,
+        "destino": 12,
+        "linea": "L9",
+        "tiempo_viaje": 5
+      },
+      {
+        "origen": 14,
+        "destino": 5,
+        "linea": "L9",
+        "tiempo_viaje": 3
+      },
+      {
+        "origen": 15,
+        "destino": 11,
+        "linea": "L14",
+        "tiempo_viaje": 3
+      },
+      {
+        "origen": 15,
+        "destino": 4,
+        "linea": "L14",
+        "tiempo_viaje": 4
+      }
+    ]
+  },
+  "mision": {
+    "origen_pierre": 1,
+    "origen_amelie": 12,
+    "destino_pierre": 7,
+    "destino_amelie": 8
+  },
+  "plan": {
+    "tiempo_total": 20,
+    "rutas": [
+      {
+        "personaje": "Pierre",
+        "compuerta": "D1",
+        "estaciones": [
+          1,
+          2,
+          3,
+          4,
+          7
+        ],
+        "tuneles": [
+          {
+            "origen": 1,
+            "destino": 2,
+            "linea": "L1",
+            "tiempo_viaje": 4
+          },
+          {
+            "origen": 2,
+            "destino": 3,
+            "linea": "L1",
+            "tiempo_viaje": 3
+          },
+          {
+            "origen": 3,
+            "destino": 4,
+            "linea": "L1",
+            "tiempo_viaje": 5
+          },
+          {
+            "origen": 4,
+            "destino": 7,
+            "linea": "L1",
+            "tiempo_viaje": 4
+          }
+        ],
+        "tiempo_viaje": 16,
+        "minuto_salida": 4,
+        "minuto_llegada": 20
+      },
+      {
+        "personaje": "Amélie",
+        "compuerta": "D2",
+        "estaciones": [
+          12,
+          14,
+          5,
+          10,
+          8
+        ],
+        "tuneles": [
+          {
+            "origen": 12,
+            "destino": 14,
+            "linea": "L9",
+            "tiempo_viaje": 5
+          },
+          {
+            "origen": 14,
+            "destino": 5,
+            "linea": "L9",
+            "tiempo_viaje": 3
+          },
+          {
+            "origen": 5,
+            "destino": 10,
+            "linea": "L4",
+            "tiempo_viaje": 4
+          },
+          {
+            "origen": 10,
+            "destino": 8,
+            "linea": "L4",
+            "tiempo_viaje": 4
+          }
+        ],
+        "tiempo_viaje": 20,
+        "minuto_salida": 0,
+        "minuto_llegada": 20
+      }
+    ]
+  }
+}
